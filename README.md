@@ -40,3 +40,12 @@ PROJECT 1 (Hello App)
 *Use HTML rendering to make webpage more interactive
 
 *Also using Django template language to interact views and HTML pages
+
+PROJECT 2(Is it new year)
+
+*Create a app that displays response yes when newyear is there and no when not newyear
+
+*Using static files(CSS ,JS etc)
+
+*Using django template language to implement logic in HTML and views file
+
