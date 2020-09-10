@@ -7,11 +7,13 @@ class NewTaskForm(forms.Form):
     task = forms.CharField(label="New Task")
    # priority=forms.IntegerField(label ="Priority" ,min_value=1, max_value=10)
 
-tasks= []
+tasks= [ ]       #empty variable to store user entered data
 
 def index(request):
+    if "tasks" not in request.session:
+        request.session["tasks"] = [ ]
     return render(request,"tasks/index.html " , {
-        "tasks":tasks
+        "tasks":request.session["tasks"]
     })
 #def add(request):
 #return render(request ,"tasks/add.html")
@@ -21,6 +23,7 @@ def add(request):
         form = NewTaskForm(request.POST) #taking all the data from the user and filling it in from variable
         if form.is_valid():
             task = form.cleaned_data["task"]   # give all data user has submitted
+            request.session["tasks"] += [task]
             tasks.append(task) #.reverse("tasks:index")
             return HttpResponseRedirect(reverse("tasks:index")) # redirects  the user to index page after entering data
         else:
