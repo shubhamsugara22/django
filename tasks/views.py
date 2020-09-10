@@ -1,8 +1,32 @@
+from django import forms
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse ,HttpResponseRedirect
+from django.urls import reverse
 # Create your views here.
-tasks= ["foo","bar","baz"]
+class NewTaskForm(forms.Form):
+    task = forms.CharField(label="New Task")
+   # priority=forms.IntegerField(label ="Priority" ,min_value=1, max_value=10)
+
+tasks= []
+
 def index(request):
     return render(request,"tasks/index.html " , {
         "tasks":tasks
+    })
+#def add(request):
+#return render(request ,"tasks/add.html")
+
+def add(request):
+    if request.method == "POST" :
+        form = NewTaskForm(request.POST) #taking all the data from the user and filling it in from variable
+        if form.is_valid():
+            task = form.cleaned_data["task"]   # give all data user has submitted
+            tasks.append(task) #.reverse("tasks:index")
+            return HttpResponseRedirect(reverse("tasks:index")) # redirects  the user to index page after entering data
+        else:
+            return render(request, "tasks/add.html", {
+                "form":form             # will also show data that user has entered
+                })      
+    return render(request ,"tasks/add.html", {
+        "form":NewTaskForm()             
     })
