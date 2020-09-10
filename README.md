@@ -6,7 +6,7 @@ Learn django for Web development
 
 Project Based learning
 
-Installig and setting up your Django is given in Documentation Link
+Installing and setting up your Django is given in Documentation Link
 
 Editor used : Vs code(select the right python environment whether on virtual env or local machine)
 
@@ -49,3 +49,14 @@ PROJECT 2(Is it new year)
 
 *Using django template language to implement logic in HTML and views file
 
+PROJECT 3(Task  management app)
+
+*Create a App to display tasks and add new tasks to list
+
+*Using templetate inheritance in django(HTMLs having common layout can be represented by single HTML template)
+
+*Understanding and using CSRF token 
+
+*Using Django capibility  to create custom forms
+
+*Applying sessions so multiple users can view page differnetly whne login together
