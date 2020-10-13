@@ -59,4 +59,4 @@ PROJECT 3(Task  management app)
 
 *Using Django capibility  to create custom forms
 
-*Applying sessions so multiple users can view page differnetly whne login together
+*Applying sessions so multiple users can view page uniquely when they access the site 
