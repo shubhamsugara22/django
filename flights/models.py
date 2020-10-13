@@ -10,3 +10,4 @@ class Flight(models.Model):
     def __str__(self):
         return f"{self.origin}to{ self .destination}"
 
+git 
