@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'hello',
     'newyear',
     'tasks',
+    'flights',
 ]
 
 MIDDLEWARE = [
