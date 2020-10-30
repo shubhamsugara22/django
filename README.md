@@ -60,3 +60,13 @@ PROJECT 3(Task  management app)
 *Using Django capibility  to create custom forms
 
 *Applying sessions so multiple users can view page uniquely when they access the site 
+
+PROJECT 4(Airline application )
+
+*Create a database for flight,airports and passengers
+
+*create  database with the help of MODELS
+
+*Create a django admin page (create super user ---->shubhamsugara)
+
+*Add data through admin pages in app
