@@ -70,3 +70,11 @@ PROJECT 4(Airline application )
 *Create a django admin page (create super user ---->shubhamsugara)
 
 *Add data through admin pages in app
+
+*Modify admin page for app
+
+*create a form to add user to different flights
+
+PROJECT 5(Authentication of users)
+
+*
