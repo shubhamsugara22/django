@@ -77,4 +77,10 @@ PROJECT 4(Airline application )
 
 PROJECT 5(Authentication of users)
 
-*
+*Create users using using admin
+
+*Create form for user to  access using their credentials(password and userid)
+
+*check whether user is valid or not 
+
+*display user id and email on succesful login
