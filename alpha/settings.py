@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'tasks',
     'flights',
     'users',
+    'blog',
 ]
 
 MIDDLEWARE = [
