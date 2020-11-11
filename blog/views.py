@@ -34,9 +34,10 @@ def blog_detail(request, pk):
             comment = Comments(
                 author=form.cleaned_data["author"],
                 body=form.cleaned_data["body"],
+                posts=posts
             )
             comment.save()
-    comments = Comments.objects.filter(post=posts)
+    comments = Comments.objects.filter(posts=posts)
     context = {
         "posts": posts,
         "comments": comments,

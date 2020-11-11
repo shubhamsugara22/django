@@ -6,6 +6,7 @@ from . models import Post, Category
 
 
 class PostAdmin(admin.ModelAdmin):
+    list_display = ("title", "body", "created_on", "last_modified")
     pass
 
 
