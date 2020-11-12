@@ -1,4 +1,4 @@
-DJANGO (Python web framework)						
+DJANGO (Python web framework)
 
 Documentation :https://docs.djangoproject.com/en/3.1/
 
@@ -10,77 +10,85 @@ Installing and setting up your Django is given in Documentation Link
 
 Editor used : Vs code(select the right python environment whether on virtual env or local machine)
 
-Step1 : Create your django project 
+Step1 : Create your django project
 
-Django-admin startproject ABC   <-----can be any name
+Django-admin startproject ABC <-----can be any name
 
-Created predefined structre for your project 
+Created predefined structre for your project
 Main Files : settings.py , urls.py , manage.py
 
-Python manage.py runserver  <===== run your first django project on your  local ip
+Python manage.py runserver <===== run your first django project on your local ip
 
-A django project can have multiple apps 
+A django project can have multiple apps
 
 Example :
-         
-Project ABC :APP1,APP2 ,APP3  and so on 
+
+Project ABC :APP1,APP2 ,APP3 and so on
 
 Step:2
 
-Python manage.py start app hello   <--------understand Basic flow of django 
+Python manage.py start app hello <--------understand Basic flow of django
 
 PROJECT 1 (Hello App)
 
-*Create a app that shows or return a message when access  that app page
+\*Create a app that shows or return a message when access that app page
 
-*Understand the link between URLs and views 
+\*Understand the link between URLs and views
 
-*Use templates for render Basic HTML in Django
+\*Use templates for render Basic HTML in Django
 
-*Use HTML rendering to make webpage more interactive
+\*Use HTML rendering to make webpage more interactive
 
-*Also using Django template language to interact views and HTML pages
+\*Also using Django template language to interact views and HTML pages
 
 PROJECT 2(Is it new year)
 
-*Create a app that displays response yes when newyear is there and no when not newyear
+\*Create a app that displays response yes when newyear is there and no when not newyear
 
-*Using static files(CSS ,JS etc)
+\*Using static files(CSS ,JS etc)
 
-*Using django template language to implement logic in HTML and views file
+\*Using django template language to implement logic in HTML and views file
 
-PROJECT 3(Task  management app)
+PROJECT 3(Task management app)
 
-*Create a App to display tasks and add new tasks to list
+\*Create a App to display tasks and add new tasks to list
 
-*Using templetate inheritance in django(HTMLs having common layout can be represented by single HTML template)
+\*Using templetate inheritance in django(HTMLs having common layout can be represented by single HTML template)
 
-*Understanding and using CSRF token 
+\*Understanding and using CSRF token
 
-*Using Django capibility  to create custom forms
+\*Using Django capibility to create custom forms
 
-*Applying sessions so multiple users can view page uniquely when they access the site 
+\*Applying sessions so multiple users can view page uniquely when they access the site
 
 PROJECT 4(Airline application )
 
-*Create a database for flight,airports and passengers
+\*Create a database for flight,airports and passengers
 
-*create  database with the help of MODELS
+\*create database with the help of MODELS
 
-*Create a django admin page (create super user ---->shubhamsugara)
+\*Create a django admin page (create super user ---->shubhamsugara)
 
-*Add data through admin pages in app
+\*Add data through admin pages in app
 
-*Modify admin page for app
+\*Modify admin page for app
 
-*create a form to add user to different flights
+\*create a form to add user to different flights
 
 PROJECT 5(Authentication of users)
 
-*Create users using using admin
+\*Create users using using admin
 
-*Create form for user to  access using their credentials(password and userid)
+\*Create form for user to access using their credentials(password and userid)
 
-*check whether user is valid or not 
+\*check whether user is valid or not
 
-*display user id and email on succesful login
+\*display user id and email on succesful login
+
+#BLOG PROJECT
+
+\*Create a blog page (category ,comment,title)
+
+\*Add a comment section
+
+\*Store data using admin page
